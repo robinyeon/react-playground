@@ -8,7 +8,10 @@ interface ErrorBoundaryState {
   hasError: false;
 }
 
-class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
+class CustomErrorBoundary extends Component<
+  ErrorBoundaryProps,
+  ErrorBoundaryState
+> {
   state: ErrorBoundaryState;
 
   constructor(props: ErrorBoundaryProps) {
@@ -33,4 +36,4 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   }
 }
 
-export default ErrorBoundary;
+export default CustomErrorBoundary;
