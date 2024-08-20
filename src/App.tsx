@@ -1,11 +1,14 @@
+import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
 import { Header } from "./components/Header";
 import { Main } from "./components/Main";
 
 function App() {
   return (
     <>
-      <Header />
-      <Main />
+      <ErrorBoundary>
+        <Header />
+        <Main />
+      </ErrorBoundary>
     </>
   );
 }
