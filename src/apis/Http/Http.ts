@@ -23,7 +23,7 @@ class Http implements HttpBase {
     try {
       const response = await this.fetcher.get(url, config);
 
-      return response as Response;
+      return response.data as Response;
     } catch (err) {
       throw this.handleError(err);
     }
